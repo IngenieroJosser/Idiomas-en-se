@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+@font-face {
+    font-family: "Ichiji-two";
+    src: url("ruta/relativa/a/la/carpeta/fonts/Ichiji-two.otf") format("opentype");
+}
+  
+  @font-face {
+    font-family: "Nunito Light";
+    src: url("ruta/relativa/a/la/carpeta/fonts/Nunito-Light.otf") format("opentype");
+}
+
+h1 {
+    font-family: "Ichiji-two";
+}
+  
+p {
+    font-family: "Nunito Light", 'Italic';
+}
+    
+
+button:hover{
+    background-color: #FF7300;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.container nav{
+    font-size: 24px;
+}
+
+.container a {
+    border: 2px solid #003787;
+    border-radius: 12px;
+}
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 22px 30px;
+    font-weight: bold;
+    color: #003787;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #FF7300;;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/fotoPagina-Idiomas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+    font-family: 'Ichiji-two';
+    font-size: 5em;
+}
+#hero button{
+    font-size: 1.75em;
+}
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+}
+/*FINALIZACION DE LA PARTE SUPERIOR*/
+
