@@ -1,27 +1,6 @@
-const carousel = document.getElementById('carousel');
-const slides = Array.from(carousel.querySelectorAll('.slide'));
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-let currentIndex = 0;
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    if (i === index) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  showSlide(currentIndex);
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('show');
 });
-
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  showSlide(currentIndex);
-});
-
-showSlide(currentIndex);

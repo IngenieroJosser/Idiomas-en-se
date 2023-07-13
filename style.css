@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html{
@@ -13,12 +15,17 @@ body{
 
 @font-face {
     font-family: "Ichiji-two";
-    src: url("ruta/relativa/a/la/carpeta/fonts/Ichiji-two.otf") format("opentype");
+    src: url('./Ichiji-Two.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+
 }
-  
-  @font-face {
-    font-family: "Nunito Light";
-    src: url("ruta/relativa/a/la/carpeta/fonts/Nunito-Light.otf") format("opentype");
+
+@font-face {
+    font-family: "Nunito";
+    src: url('./Nunito-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
 }
 
 h1 {
@@ -26,12 +33,12 @@ h1 {
 }
   
 p {
-    font-family: "Nunito Light", 'Italic';
+    font-family: "Nunito";
 }
     
 
 button:hover{
-    background-color: #FF7300;
+    background-color: #FFFFFF;
 }
 
 .container{
@@ -41,11 +48,15 @@ button:hover{
 
 .container nav{
     font-size: 24px;
+    margin: 10px;
 }
 
 .container a {
-    border: 2px solid #003787;
+    background-color: #003787;
+    border: 2px solid #FF7300;
     border-radius: 12px;
+    font-family: 'Nunito';
+    color: #FFFFFF;
 }
 
 header{
@@ -82,7 +93,7 @@ header a{
 }
 
 header a:hover{
-    color: #FF7300;;
+    opacity: .2;
 }
 
 #hero{
@@ -107,7 +118,7 @@ header a:hover{
 #hero h1{
     color: white;
     font-family: 'Ichiji-two';
-    font-size: 5em;
+    font-size: 4.5em;
 }
 #hero button{
     font-size: 1.75em;
@@ -124,6 +135,12 @@ header nav{
     padding-right: 20px;
 }
 
+.foto-logoPagina {
+    margin-top: 34px;
+    width: 186px;
+    height: 100px;
+}
+
 @media (min-width: 850px){
     header{
         position: fixed;
@@ -132,3 +149,28 @@ header nav{
 }
 /*FINALIZACION DE LA PARTE SUPERIOR*/
 
+.block-content {
+    display: flex;
+}
+
+.contenido1 {
+    width: 465px;
+    height: 465px;
+    border-radius: 12px;
+    margin-left: 67px;
+    object-fit: cover;
+    box-shadow: 44px -17px 9px 4px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+/* 
+.texto-informativo1 h1 {
+    margin-left: 12px;
+} */
+
+#texto1 {
+    margin-left: 92px;
+    margin-top: 82px;
+}
+
+#texto1 h1 {
+    font-size: 2.5rem;
+}
