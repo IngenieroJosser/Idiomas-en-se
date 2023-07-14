@@ -151,6 +151,7 @@ header nav{
 
 .block-content {
     display: flex;
+    margin-top: 4vh;
 }
 
 .contenido1 {
@@ -173,4 +174,32 @@ header nav{
 
 #texto1 h1 {
     font-size: 2.5rem;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 22vh);
+    gap: 30px;
+    margin: 54px 27px;
+}
+.boxes{
+    display: flex;
+}
+.boxes:nth-child(1){
+    grid-area: 1/1/2/2;
+}
+.boxes:nth-child(2){
+    grid-area: 2/2/3/3;
+}
+.boxes:nth-child(3){
+    grid-area: 3/1/4/2;
+}
+.box{
+    width: 60%;
+    background-color: #003787;
+}
+.box--img{
+    width: 40%;
+    background-color: #FF7300;
 }
